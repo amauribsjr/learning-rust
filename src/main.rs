@@ -2,13 +2,13 @@
 fn main() {
     println!(" = Array and functions return = \n");
     let drinks = ["Coca-Cola", "Guaraná", "Monster", "Juice"];
-    println!("This is the result of X + Y, considering X as 12.8 and Y 89: {:?}", add(12.8, 89f64));
+    println!("This is the result of X + Y, considering X as 12.8 and Y as 89: {:?}", add(12.8, 89f64));
     println!("The second drink within drinks' array is: {:?}", drinks[1]);
 
     let rep_three = [3; 5];
     let three_five = [3, 5];
     println!("Number three 5 times: {:?}", rep_three);
-    println!("Now there's only {:?} but nothing is getting repeating.", three_five);
+    println!("Now there's only {:?} but nothing is getting repeated.", three_five);
 
     println!("\n = Mutable vars and shadowing = \n");
 
@@ -38,6 +38,8 @@ fn main() {
 
     let tup1: (i32, f64, bool) = (12, 83.4, false);
     println!("tup1 values are: {:?}", tup1);
+
+    //let tup2 = (12, 43.0, true);
 
     let (x1, y1, z1) = tup1;
     println!("tup1 desconstructed values: {x1}, {y1}, {z1}");
